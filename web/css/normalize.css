@@ -1,0 +1,93 @@
+/**
+ * 1. Исправляем высоту строки во всех браузерах и запрещаем изменение 
+ * размера шрифта после ориентации устройства в iOS.
+ */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+/**
+ * Упрощаем работу с размерами элементов
+ */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Убираем внешние отступы по умолчанию
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Исправляем отображение разделов в Chrome, Firefox и Safari
+ */
+main {
+  display: block;
+}
+
+/**
+ * 1. Исправляем размеры шрифта для заголовков
+ * 2. Убираем стандартные отступы
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  margin: 0;
+}
+
+/**
+ * 1. Убираем серый фон у ссылок в IE 10.
+ * 2. Убираем подчеркивание и делаем их "чистыми"
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * Исправляем отображение изображений
+ */
+img {
+  border-style: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Элементы форм: исправляем шрифты и наследование
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/**
+ * Убираем специфические рамки в Firefox
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Исправляем отображение списков
+ */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

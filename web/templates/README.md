@@ -1,2 +1,0 @@
-# TEMPLATES
-HTML шаблоны
