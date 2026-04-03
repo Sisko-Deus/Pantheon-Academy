@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог курсов</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/courses.css">
+   
+</head>
+<body>
+
+    <!-- Шапка (Классы из вашего CSS) -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">LOGO</a>
+            <nav class="header-nav">
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="#">Курсы</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Об академии</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-login">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секция: Каталог курсов -->
+        <section class="catalog-section">
+            <div class="container">
+                <span class="subtitle">На любой вкус</span>
+                <h2 class="title">Каталог курсов</h2>
+                
+                <div class="catalog-controls">
+                    <div class="categories">
+                        <button class="category-tag">Категория</button>
+                        <button class="category-tag">Категория</button>
+                        <button class="category-tag">Категория</button>
+                        <button class="category-tag active">Выбранная категория</button>
+                        <button class="category-tag">Категория</button>
+                        <button class="category-tag">Категория</button>
+                        <button class="category-tag">Категория</button>
+                        <button class="category-tag">Категория</button>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="Какой курс ищете?">
+                    </div>
+                </div>
+
+                <div class="course-grid">
+                    <!-- Скрипт для отображения 8 карточек курсов -->
+                    <script>
+                        for(let i=0; i<8; i++) {
+                            document.write(`
+                            <div class="course-card">
+                                <h3 class="course-title">Название курса</h3>
+                                <p class="course-desc">Описание курса</p>
+                                <div class="course-image-placeholder"></div>
+                                <div class="course-price-wrapper">
+                                    <p class="course-price">от 5 400 тугриков/месяц</p>
+                                    <p class="course-price-full">или сразу 54 000 тугриков</p>
+                                </div>
+                            </div>
+                            `);
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция: FAQ (Переписана на <details> как требовал ваш CSS) -->
+        <section class="faq-section">
+            <div class="container">
+                <span class="subtitle">FAQ</span>
+                <h2 class="title faq-title">Часто задаваемые вопросы</h2>
+                
+                <div class="faq">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Часто задаваемый вопрос
+                            <div class="faq-arrow"></div>
+                        </summary>
+                        <p class="faq-answer">Здесь находится подробный ответ на часто задаваемый вопрос. Текст ответа описывает нюансы обучения и дает полную информацию пользователю.</p>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Часто задаваемый вопрос
+                            <div class="faq-arrow"></div>
+                        </summary>
+                        <p class="faq-answer">Ответ на второй вопрос.</p>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Часто задаваемый вопрос
+                            <div class="faq-arrow"></div>
+                        </summary>
+                        <p class="faq-answer">Ответ на третий вопрос.</p>
+                    </details>
+                </div>
+
+                <div class="faq-btn">
+                    <div class="btn-more-wrapper">
+                        <button>Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция: Консультация (С вашей крутой градиентной подложкой) -->
+        <section class="consultation-section">
+            <div class="container">
+                <div class="consultation-content">
+                    <span class="subtitle">Все еще не уверены?</span>
+                    <h2 class="title consultation-title">Получите консультацию</h2>
+                    
+                    <form action="#" method="POST">
+                        <div class="form-grid">
+                            <input type="text" class="form-input" placeholder="Имя" required>
+                            <input type="tel" class="form-input" placeholder="+7 (000) 000-00-00" required>
+                            <input type="email" class="form-input" placeholder="Эл. почта" required>
+                            <button type="submit" class="form-submit-btn">Отправить</button>
+                        </div>
+                        
+                        <!-- Ваш кастомный чекбокс -->
+                        <label class="custom-checkbox">
+                            <input type="checkbox" required checked>
+                            <span class="checkmark"></span>
+                            Принимаю условия пользовательского соглашения
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ваш идеальный Footer из предыдущего шага -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo footer-logo">LOGO</a>
+      
+                    <div class="footer-socials">
+                        <p>Мы в соц. сетях:</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Telegram"><img src="../assets/svg/tg-icon.svg" alt="Telegram"></a>
+                            <a href="#" aria-label="WhatsApp"><img src="../assets/svg/whatsapp-icon.svg" alt="WhatsApp"></a>
+                            <a href="#" aria-label="VK"><img src="../assets/svg/max-icon.svg" alt="Max"></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="contact-item">
+                            <a href="tel:+79999999999" class="contact-phone" >+7 (999) 999-99-99</a>
+                            <span class="contact-desc">для заявок</span>
+                        </div>
+                        <div class="contact-item">
+                            <a href="tel:+79999999999" class="contact-phone" >+7 (999) 999-99-99</a>
+                            <span class="contact-desc">для партнёрства</span>
+                        </div>
+                    </div>
+
+                    <div class="footer-email-div">
+                        <a href="mailto:support@panteon.ru" class="footer-email">support@panteon.ru</a>
+                        <span class="contact-desc">поддержка для студентов</span>
+                    </div>
+
+                    <p class="footer-adress">г. Рубцовск, Алтайская 270Б,<br>корпус 7</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Меню сайта</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Курсы</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Об академии</a></li>
+                        <li><a href="#">ЧаВо</a></li>
+                        <li><a href="#">Преподаватели</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Популярные курсы</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Frontend-разработка</a></li>
+                        <li><a href="#">UI/UX-дизайн</a></li>
+                        <li><a href="#">Backend-разработка</a></li>
+                        <li><a href="#">Backend-разработка</a></li>
+                        <li><a href="#">Backend-разработка</a></li>
+                        <li><a href="#">Backend-разработка</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Информация</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Лицензии</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                        <li><a href="#">Партнёрам</a></li>
+                        <li><a href="#">Программа подбора работы</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
