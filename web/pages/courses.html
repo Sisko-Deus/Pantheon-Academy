@@ -12,25 +12,25 @@
 </head>
 <body>
 
-    <!-- Шапка (Классы из вашего CSS) -->
-    <header class="header">
+   <header class="header">
         <div class="container header-inner">
             <a href="#" class="logo">LOGO</a>
-            <nav class="header-nav">
-                <div class="main-menu">
+
+            <div class="header-nav">
+                <nav class="main-menu">
                     <ul>
                         <li><a href="#">Курсы</a></li>
                         <li><a href="#">Новости</a></li>
-                        <li><a href="#">Об академии</a></li>
+                        <li><a href="#">Об Академии</a></li>
                     </ul>
-                </div>
+                </nav>
+                
                 <a href="#" class="btn-login">Войти</a>
-            </nav>
+            </div>
         </div>
     </header>
 
     <main>
-        <!-- Секция: Каталог курсов -->
         <section class="catalog-section">
             <div class="container">
                 <span class="subtitle">На любой вкус</span>
@@ -41,19 +41,20 @@
                         <button class="category-tag">Категория</button>
                         <button class="category-tag">Категория</button>
                         <button class="category-tag">Категория</button>
+                        <button class="category-tag">Категория</button>
                         <button class="category-tag active">Выбранная категория</button>
+                        <button class="category-tag">Категория</button>
                         <button class="category-tag">Категория</button>
                         <button class="category-tag">Категория</button>
                         <button class="category-tag">Категория</button>
                         <button class="category-tag">Категория</button>
                     </div>
                     <div class="search-box">
-                        <input type="text" class="search-input" placeholder="Какой курс ищете?">
+                        <input type="text" class="search-input" placeholder="Какой курс ищем?">
                     </div>
                 </div>
 
                 <div class="course-grid">
-                    <!-- Скрипт для отображения 8 карточек курсов -->
                     <script>
                         for(let i=0; i<8; i++) {
                             document.write(`
@@ -73,74 +74,86 @@
             </div>
         </section>
 
-        <!-- Секция: FAQ (Переписана на <details> как требовал ваш CSS) -->
-        <section class="faq-section">
+         <section class="faq-section">
             <div class="container">
-                <span class="subtitle">FAQ</span>
-                <h2 class="title faq-title">Часто задаваемые вопросы</h2>
-                
-                <div class="faq">
-                    <details class="faq-item">
-                        <summary class="faq-question">
-                            Часто задаваемый вопрос
-                            <div class="faq-arrow"></div>
-                        </summary>
-                        <p class="faq-answer">Здесь находится подробный ответ на часто задаваемый вопрос. Текст ответа описывает нюансы обучения и дает полную информацию пользователю.</p>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary class="faq-question">
-                            Часто задаваемый вопрос
-                            <div class="faq-arrow"></div>
-                        </summary>
-                        <p class="faq-answer">Ответ на второй вопрос.</p>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary class="faq-question">
-                            Часто задаваемый вопрос
-                            <div class="faq-arrow"></div>
-                        </summary>
-                        <p class="faq-answer">Ответ на третий вопрос.</p>
-                    </details>
-                </div>
+                <div class="faq-content">
+                    <!-- Надзаголовок -->
+                    <p class="subtitle faq-subtitle">Faq</p>
 
-                <div class="faq-btn">
-                    <div class="btn-more-wrapper">
-                        <button>Подробнее</button>
+                    <!-- Заголовок  -->
+                    <h2 class="title faq-title">Часто задаваемые вопросы</h2>
+
+                    <div class="faq">
+                        <details class="faq-item">
+                            <summary class="faq-question">Часто задаваемый вопрос <span class="faq-arrow"></span></summary>
+                            <div class="faq-answer">
+                                <p>Какой-то ответникс</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">Часто задаваемый вопрос <span class="faq-arrow"></span></summary>
+                            <div class="faq-answer">
+                                <p>Какой-то ответникс</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">Часто задаваемый вопрос <span class="faq-arrow"></span></summary>
+                            <div class="faq-answer">
+                                <p>Какой-то ответникс</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">Часто задаваемый вопрос <span class="faq-arrow"></span></summary>
+                            <div class="faq-answer">
+                                <p>Какой-то ответникс</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">Часто задаваемый вопрос <span class="faq-arrow"></span></summary>
+                            <div class="faq-answer">
+                                <p>Какой-то ответникс</p>
+                            </div>
+                        </details>
+                    </div>
+                    
+                    <div class="faq-btn">
+                        <a href="#" class="btn">Подробнее</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Секция: Консультация (С вашей крутой градиентной подложкой) -->
-        <section class="consultation-section">
+         <section class="consultation-section">
             <div class="container">
                 <div class="consultation-content">
-                    <span class="subtitle">Все еще не уверены?</span>
-                    <h2 class="title consultation-title">Получите консультацию</h2>
-                    
-                    <form action="#" method="POST">
+                    <!-- Текстовая часть -->
+                    <p class="subtitle-light">Все еще не уверены?</p>
+                    <h2 class="title consultation-title">ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ</h2>
+
+                    <form action="#" method="POST" class="consultation-form">
                         <div class="form-grid">
-                            <input type="text" class="form-input" placeholder="Имя" required>
-                            <input type="tel" class="form-input" placeholder="+7 (000) 000-00-00" required>
-                            <input type="email" class="form-input" placeholder="Эл. почта" required>
+                            <input type="text" name="name" placeholder="Имя" class="form-input">
+                            <input type="tel" name="phone" placeholder="+7 (000) 000-00-00" class="form-input">
+                            <input type="email" name="email" placeholder="Эл. почта" class="form-input">
                             <button type="submit" class="form-submit-btn">Отправить</button>
                         </div>
-                        
-                        <!-- Ваш кастомный чекбокс -->
-                        <label class="custom-checkbox">
-                            <input type="checkbox" required checked>
-                            <span class="checkmark"></span>
-                            Принимаю условия пользовательского соглашения
-                        </label>
                     </form>
+
+                    <div class="checkbox-row">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            <span class="checkbox-text">Принимаю условия <a href="#">пользовательского соглашения</a></span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <!-- Ваш идеальный Footer из предыдущего шага -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
